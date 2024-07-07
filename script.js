@@ -88,8 +88,8 @@ function showdata() {
         <td>${datapro[i].total}</td>
         <td>${datapro[i].discount}</td>
         <td>${datapro[i].category}</td>
-        <td><button onclick="updateProduct(${i})">Update</button></td>
-        <td><button onclick="deleteProduct(${i})">Delete</button></td>
+       <td><button onclick="updateProduct(${i})"><i class="fa-regular fa-pen-to-square"></i></button></td>
+        <td><button onclick="deleteProduct(${i})"><i class="fa-solid fa-trash"></i></button></td>
       </tr>`;
   }
   document.getElementById('tbody').innerHTML = table;
