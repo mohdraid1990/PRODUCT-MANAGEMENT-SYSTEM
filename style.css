@@ -1,163 +1,196 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: #442323;
-    color: #fafafa;
-    font-family:Georgia, 'Times New Roman', Times, serif
+  background: #442323;
+  color: #fafafa;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 .crud {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
+
 .head {
-    text-align: center;
-    text-transform: uppercase;
-    margin: 10px 0;
-    padding-top: 20px;
-    
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+  padding-top: 20px;
 }
+
 h1 {
-    font-size: 35px;
+  font-size: 35px;
 }
+
 p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 input {
-    width: 100%;
-    height: 36px;
-    outline: none;
-    margin: 4px 0;
-    border: none;
-    background: #444;
-    border-radius: 10px;
-    padding: 15px;
-    color:#fff;
-    font-size: 16px;
-    transition: 0.3s all ease-in-out;
-
+  width: 100%;
+  height: 36px;
+  outline: none;
+  margin: 4px 0;
+  border: none;
+  background: #444;
+  border-radius: 10px;
+  padding: 15px;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s all ease-in-out;
 }
+
 input:focus {
   background: #242424;
 }
+
 input::placeholder {
-    font-size: 15px;
-}
-.price {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-}
-.price input {
-    width: 49%;
-    margin: 4px;
-}
-#total{
-    background: #af4d4d;
-    padding: 8px 2px;
-    border-radius: 10px;
-    text-align: center;
-}
-#total::before{
-    content: 'Total:';
-}
-button {
-    width: 100%;
-    height: 30px;
-    border: none;
-    cursor: pointer;
-    background: #3c5a92;
-    color: #fff;
-    border-radius: 20px;
-    transition: 0.3s all ease-in-out;
-    font-size: 20px;
-}
-button:hover{
-    background: #314146;
-    letter-spacing: 1px;
+  font-size: 15px;
 }
 
-.btnserch{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 10px;
-    gap: 10px;
-    flex-wrap: wrap;
-    width: 100%;
+.price {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.price input {
+  width: 49%;
+  margin: 4px 0;
+}
+
+#total {
+  background: #af4d4d;
+  padding: 8px 2px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#total::before {
+  content: "Total:";
+}
+
+button {
+  width: 100%;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  background: #3c5a92;
+  color: #fff;
+  border-radius: 20px;
+  transition: 0.3s all ease-in-out;
+  font-size: 20px;
+}
+
+button:hover {
+  background: #314146;
+  letter-spacing: 1px;
+}
+
+.btnserch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .btnserch button {
-    width: 45%;
+  width: 45%;
 }
 
 table {
-    width: 100%;
-    text-align: center;
-    margin: 10px 0;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
 }
+
 table th {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
-th,td{
-    padding: 5px;
+th,
+td {
+  padding: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+  .crud {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .crud {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  .price input {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .price {
+    flex-direction: column;
+  }
+
+  .price input {
+    width: 100%;
+  }
+
+  table th,
+  table td {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  .btnserch button {
+    width: 48%;
+  }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 450px) {
-    .btnserch button {
-        width: 100%;
-    }
-}
