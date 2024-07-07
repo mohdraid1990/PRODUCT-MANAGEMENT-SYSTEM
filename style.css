@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #442323;
+    color: #fafafa;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.crud {
+    width: 80%;
+    margin: 0 auto;
+}
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+    padding-top: 20px;
+    
+}
+h1 {
+    font-size: 35px;
+}
+p {
+    font-size: 20px;
+}
+
+input {
+    width: 100%;
+    height: 36px;
+    outline: none;
+    margin: 4px 0;
+    border: none;
+    background: #444;
+    border-radius: 10px;
+    padding: 15px;
+    color:#fff;
+    font-size: 16px;
+    transition: 0.3s all ease-in-out;
+
+}
+input:focus {
+  background: #242424;
+}
+input::placeholder {
+    font-size: 15px;
+}
+.price {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.price input {
+    width: 49%;
+    margin: 4px;
+}
+#total{
+    background: #af4d4d;
+    padding: 8px 2px;
+    border-radius: 10px;
+    text-align: center;
+}
+#total::before{
+    content: 'Total:';
+}
+button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: #3c5a92;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.3s all ease-in-out;
+    font-size: 20px;
+}
+button:hover{
+    background: #314146;
+    letter-spacing: 1px;
+}
+
+.btnserch{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.btnserch button {
+    width: 45%;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th {
+    text-transform: uppercase;
+}
+
+th,td{
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 450px) {
+    .btnserch button {
+        width: 100%;
+    }
+}
